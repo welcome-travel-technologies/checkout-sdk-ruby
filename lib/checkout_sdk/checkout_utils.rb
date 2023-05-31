@@ -34,6 +34,7 @@ module CheckoutSdk
       Faraday.new do |f|
         f.response :follow_redirects
         f.response :raise_error
+        f.adapter Faraday.default_adapter
       end
     end
   end
